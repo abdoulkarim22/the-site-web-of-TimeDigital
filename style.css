@@ -1,5 +1,11 @@
 body{
   overflow-x: hidden;
+  background-color: black;
+}
+header{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 .navigation a::after{
     content: '';
@@ -190,6 +196,8 @@ i {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   margin-top: 10px;
+  color: green;
+  font-size: 35px;
 }
 .cell{
   width: 33%;
@@ -205,5 +213,48 @@ i {
   object-fit: cover;
 }
 .item img{
+  display: flex;
+  justify-content: center;
   height: 250px;
+  width: 400px !important;
+  border-radius: 20px;
+}
+.item{
+  color: green;
+}
+.Nospartenaire{
+  background-color: bisque;
+  height: 400px;
+  width: 100%;
+  box-shadow: white 0px 0px 10px 10px;
+}
+.card{
+  height: 20rem;
+  width: 20rem;
+}
+.animations {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+  animation: mymove 5s infinite;
+  border-radius: 100%;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+.animations-2 {
+  width: 100px;
+  height: 100px;
+  background: bisque;
+  position: relative;
+  animation: mymove 5s infinite;
+  border-radius: 100%;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
 }
